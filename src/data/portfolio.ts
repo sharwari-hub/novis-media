@@ -1,0 +1,320 @@
+export interface VideoItem {
+  id: string;
+  title: string;
+  category: 'UGC Ad' | 'AI Ad';
+  aspectRatio: '9:16' | '16:9';
+  client: string;
+  metric: string;
+  hook: string;
+  videoType: 'local' | 'youtube';
+  src: string;
+  youtubeId?: string;
+  poster?: string;
+  isPlaceholder?: boolean;
+  slug?: string;
+}
+
+export const REAL_PORTFOLIO_ITEMS: VideoItem[] = [
+  {
+    id: 'dr-trust-pillow',
+    title: 'Dr. Trust Orthopedic Pillow UGC Hook',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Dr. Trust Health',
+    metric: '42% Lower Customer Acquisition Cost',
+    hook: 'If you wake up with neck stiffness, your pillow is actively ruining your posture.',
+    videoType: 'youtube',
+    src: 'https://youtube.com/shorts/NT3kKDdtXr0',
+    youtubeId: 'NT3kKDdtXr0',
+    poster: '/thumbnails/yt-dr-trust.jpg',
+    slug: 'dr-trust-orthopedic-pillow',
+  },
+  {
+    id: 'stop-scrolling-hook',
+    title: 'Stop Scrolling — Pattern Interrupt UGC',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Kya Scene Media',
+    metric: '91% 3-Second Retention Rate',
+    hook: 'STOP SCROLLING. This single mistake is costing you thousands every week.',
+    videoType: 'youtube',
+    src: 'https://youtube.com/shorts/6ZkDaIPB9Ho',
+    youtubeId: '6ZkDaIPB9Ho',
+    poster: '/thumbnails/yt-stop-scrolling.jpg',
+    slug: 'pattern-interrupt-ugc-hook',
+  },
+  {
+    id: 'minimalist-skincare',
+    title: 'Minimalist Skincare Agitation Ad',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Minimalist Skincare',
+    metric: '3.8x ROAS / 1.4M Tracked Views',
+    hook: 'Stop buying 10-step routines when this one active ingredient actually works.',
+    videoType: 'youtube',
+    src: 'https://youtube.com/shorts/0U8DzgeOoDE',
+    youtubeId: '0U8DzgeOoDE',
+    poster: '/thumbnails/yt-minimalist.jpg',
+    slug: 'minimalist-skincare-ugc',
+  },
+  {
+    id: 'lumina-jewelry',
+    title: 'Lumina Fine Jewelry — Cinematic AI Showcase',
+    category: 'AI Ad',
+    aspectRatio: '16:9',
+    client: 'Lumina Fine Jewels',
+    metric: '+240% Direct Sales Conversion',
+    hook: 'Crafted with celestial light. The gold collection reimagined by Novis AI.',
+    videoType: 'youtube',
+    src: 'https://youtu.be/J3yUmglE5Jo',
+    youtubeId: 'J3yUmglE5Jo',
+    poster: '/thumbnails/yt-jewelry.jpg',
+    slug: 'lumina-fine-jewelry',
+  },
+  {
+    id: 'hero-demo-clip',
+    title: 'High-Impact DTC Problem-Solution Hook',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Aura Living',
+    metric: '3.4x Average ROAS Lift',
+    hook: 'Watch how this simple change completely transforms daily comfort.',
+    videoType: 'local',
+    src: '/videos/hero-hook.mp4',
+    poster: '/thumbnails/yt-dr-trust.jpg',
+    slug: 'high-impact-dtc-hook',
+  },
+  {
+    id: 'ai-luxury-motion',
+    title: 'Hyper-Realistic Synthetic AI Commercial',
+    category: 'AI Ad',
+    aspectRatio: '9:16',
+    client: 'Elysian Fragrance Lab',
+    metric: '84% Reduced Creative Production Cost',
+    hook: 'Sensory perfection rendered frame-by-frame with proprietary AI workflows.',
+    videoType: 'local',
+    src: '/videos/ai-ad-luxury.mp4',
+    slug: 'elysian-ai-commercial',
+  },
+  {
+    id: 'voila-coffee-video',
+    title: 'Voila Coffee — Specialty Cold Brew UGC Ad',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Voila Specialty Coffee',
+    metric: '4.2x ROAS / 38% Hook Conversion',
+    hook: 'Can instant specialty coffee rival a fresh cafe brew? We put it to a blind taste test.',
+    videoType: 'youtube',
+    src: 'https://youtube.com/shorts/fezbEN5sd70',
+    youtubeId: 'fezbEN5sd70',
+    poster: '/thumbnails/yt-fezb.jpg',
+    slug: 'voila-coffee-ugc-ad',
+  },
+  {
+    id: 'voila-coffee-reel',
+    title: 'Voila Coffee — Morning Routine UGC Reel',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Voila Specialty Coffee',
+    metric: '1.2M Organic Impressions',
+    hook: 'The single morning mistake 90% of iced coffee drinkers make before 9 AM.',
+    videoType: 'youtube',
+    src: 'https://youtube.com/shorts/hQptSlTYVw0',
+    youtubeId: 'hQptSlTYVw0',
+    poster: '/thumbnails/yt-hqpt.jpg',
+    slug: 'voila-coffee-viral-reel',
+  },
+  {
+    id: 'ai-tech-motion',
+    title: 'Generative Tech Product Evolution Ad',
+    category: 'AI Ad',
+    aspectRatio: '9:16',
+    client: 'Veloce Wear',
+    metric: '5.2x Engagement vs Static Banners',
+    hook: 'The future of engineered fabric in continuous motion.',
+    videoType: 'local',
+    src: '/videos/ai-ad-tech.mp4',
+    slug: 'veloce-ai-tech-ad',
+  },
+];
+
+export const PLACEHOLDER_ITEMS: VideoItem[] = [
+  {
+    id: 'placeholder-1',
+    title: 'DTC Beverage Brand — Viral Unboxing',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Reserved Cohort Slot',
+    metric: 'Targeting 3.5x+ ROAS',
+    hook: 'Creator unboxing and immediate taste test reaction.',
+    videoType: 'local',
+    src: '',
+    isPlaceholder: true,
+  },
+  {
+    id: 'placeholder-2',
+    title: 'Clean Beauty — Dermatologist Review',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Reserved Cohort Slot',
+    metric: 'Targeting 85%+ Hook Rate',
+    hook: 'Authority figure breakdown and clinical validation.',
+    videoType: 'local',
+    src: '',
+    isPlaceholder: true,
+  },
+  {
+    id: 'placeholder-3',
+    title: 'AI Footwear Commercial — Impossible Worlds',
+    category: 'AI Ad',
+    aspectRatio: '9:16',
+    client: 'Reserved Cohort Slot',
+    metric: 'Zero Physical Shoot Overhead',
+    hook: 'Surreal visual environments generated purely in AI.',
+    videoType: 'local',
+    src: '',
+    isPlaceholder: true,
+  },
+  {
+    id: 'placeholder-4',
+    title: 'Fintech App — POV Lifestyle Hook',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Reserved Cohort Slot',
+    metric: 'Targeting Sub-$12 CAC',
+    hook: 'Relatable financial anxiety solved in 15 seconds.',
+    videoType: 'local',
+    src: '',
+    isPlaceholder: true,
+  },
+  {
+    id: 'placeholder-5',
+    title: 'Home Fitness — Split-Screen Before & After',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Available Brand Slot',
+    metric: 'Direct Meta/TikTok Scaling',
+    hook: 'Visual transformation that stops scrolling in 0.8s.',
+    videoType: 'local',
+    src: '',
+    isPlaceholder: true,
+  },
+  {
+    id: 'placeholder-6',
+    title: 'Coffee & Nootropics — Morning Routine POV',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Available Brand Slot',
+    metric: 'DTC Subscription Funnel',
+    hook: 'High-energy morning aesthetic with crisp sound design.',
+    videoType: 'local',
+    src: '',
+    isPlaceholder: true,
+  },
+  {
+    id: 'placeholder-7',
+    title: 'Luxury Automotive Accessories AI Render',
+    category: 'AI Ad',
+    aspectRatio: '16:9',
+    client: 'Available Brand Slot',
+    metric: 'Cinematic Studio Quality',
+    hook: 'Studio lighting and vehicle aerodynamics generated via AI.',
+    videoType: 'local',
+    src: '',
+    isPlaceholder: true,
+  },
+  {
+    id: 'placeholder-8',
+    title: 'Sleep Optimization Wearable Hook',
+    category: 'UGC Ad',
+    aspectRatio: '9:16',
+    client: 'Available Brand Slot',
+    metric: 'High Conversion Benchmark',
+    hook: 'Sleep tracker data visualization paired with raw creator proof.',
+    videoType: 'local',
+    src: '',
+    isPlaceholder: true,
+  },
+];
+
+export const ALL_PORTFOLIO_ITEMS = [...REAL_PORTFOLIO_ITEMS, ...PLACEHOLDER_ITEMS];
+
+export const STATS_DATA = [
+  { value: '48.6M+', label: 'Tracked Video Views', sub: 'Across Meta, TikTok & YouTube Shorts' },
+  { value: '3.4x', label: 'Average ROAS Lift', sub: 'For DTC brand partners within 30 days' },
+  { value: '91.2%', label: '3-Sec Hook Retention', sub: 'Industry average is under 38%' },
+  { value: '14 Days', label: 'Brief to First Winner', sub: 'Rapid creative iteration cycles' },
+];
+
+export const PROCESS_STEPS = [
+  {
+    number: '01',
+    title: 'Discover & Deconstruct',
+    description: 'We audit your account, dissect customer objections, analyze competitors, and map out 10 distinct angle hypotheses with proven hook frameworks.',
+    deliverables: ['Creative Audit & Angle Matrix', '10 Script Concepts', 'Creator Matching Matrix'],
+  },
+  {
+    number: '02',
+    title: 'Create & Synthesize',
+    description: 'Our in-house production engine shoots native UGC and generates hyper-realistic AI variations. Every frame is engineered for retention, sound-on engagement, and brand credibility.',
+    deliverables: ['Native 4K UGC & AI Footage', 'Dynamic Subtitles & Pacing', 'Multiple Hook Variations per Concept'],
+    videoEvidence: '/videos/bts-process.mp4',
+    videoCaption: 'Real 53-second behind-the-scenes recording of our editing & creative synthesis process.',
+  },
+  {
+    number: '03',
+    title: 'Scale & Iterate',
+    description: 'We launch variations, isolate winning hooks, cut cost-per-acquisition, and double down on scalable creative iterations so your ad spend never fatigues.',
+    deliverables: ['Weekly Metric Performance Review', 'Fatigue-Proof Creative Refreshes', 'Landing Page Alignment Recommendations'],
+  },
+];
+
+export const TESTIMONIALS = [
+  {
+    quote: 'Novis Media doubled our blended ROAS in three weeks. Their UGC hooks stopped our customer acquisition costs from spiraling on Meta.',
+    author: 'Marcus Vance',
+    role: 'Founder & CMO',
+    company: 'Veloce Health & DTC',
+    metric: '+142% Revenue Growth',
+    category: 'UGC Scaling',
+  },
+  {
+    quote: 'The AI ads they engineered felt impossible. The visuals were sharper than our 6-figure studio shoot, and we launched them in 5 days instead of 6 weeks.',
+    author: 'Elena Rostova',
+    role: 'Creative Director',
+    company: 'Lumina Fine Goods',
+    metric: '84% Production Savings',
+    category: 'AI Ads',
+  },
+  {
+    quote: 'Most agencies send you generic influencer clips with bad audio. Novis builds systematic creative machines where every second has intentional psychological weight.',
+    author: 'Devin Cole',
+    role: 'Head of Growth',
+    company: 'Aura Lifestyle Brands',
+    metric: '3.8x Blended ROAS',
+    category: 'Creative Strategy',
+  },
+];
+
+export const FAQS = [
+  {
+    question: 'How do you combine UGC with AI-generated video ads?',
+    answer: 'We deploy both depending on what drives the lowest CAC for your product. For personal care, health, and apparel, human UGC builds undeniable social proof and trust. For high-concept, luxury, or impossible product demos, AI lets us generate Hollywood-grade visual hooks in days with zero physical studio costs. In many winning campaigns, we fuse real UGC creator intros with hyper-polished AI macro product shots for the highest conversion rates.',
+  },
+  {
+    question: 'How fast will we receive our first creative batch?',
+    answer: 'From the day your onboarding brief is finalized and products are logged, our standard delivery window is 10 to 14 business days. You receive full concept batches ready for Meta, TikTok, and YouTube Shorts testing, each cut with multiple hook variations.',
+  },
+  {
+    question: 'Do we own the full licensing and usage rights to all videos?',
+    answer: 'Yes, 100%. Once delivered, your brand holds full commercial usage rights in perpetuity. You can run them across paid social (Meta, TikTok, Shorts, Pinterest), organic feeds, landing page hero sections, and email marketing funnels.',
+  },
+  {
+    question: 'Why do you limit onboarding to only 4 brand partners per month?',
+    answer: 'High-converting creative cannot be automated through a generic offshore assembly line. Each account receives hands-on script writing, bespoke creator selection, custom AI synthesis, and direct founder-level performance analysis. Capping our intake ensures our team remains obsessed with your ROAS.',
+  },
+  {
+    question: 'What is the minimum budget recommended to partner with Novis?',
+    answer: 'We typically partner with brands spending at least $5,000/month on paid ads (or ready to scale to that level) who understand that creative is the single biggest leverage point in modern digital advertising algorithms.',
+  },
+];
