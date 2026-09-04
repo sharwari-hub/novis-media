@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { ArrowUpRight, AlertCircle, Sparkles, CheckCircle2, ExternalLink } from 'lucide-react';
@@ -113,14 +113,14 @@ export function InteriorRedesignCaseStudy() {
 
               {/* Clickable Live Redesign Link */}
               <a
-                href="https://profound-moxie-d64e35.netlify.app"
+                href="https://creativemindsnoviscasestudy.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-between w-full p-3.5 rounded-xl bg-[#0A0C0A] border border-[#3E7A5C]/60 hover:border-[#3E7A5C] text-xs font-mono text-[#F3F1EA] transition-all group"
               >
                 <div className="flex items-center gap-2 truncate">
                   <span className="text-[#3E7A5C] font-bold">Live Prototype:</span>
-                  <span className="text-[#F3F1EA] underline underline-offset-2 truncate">profound-moxie-d64e35.netlify.app</span>
+                  <span className="text-[#F3F1EA] underline underline-offset-2 truncate">creativemindsnoviscasestudy.netlify.app</span>
                 </div>
                 <ExternalLink className="w-4 h-4 text-[#3E7A5C] group-hover:text-[#4E9672] flex-shrink-0 ml-2" />
               </a>
