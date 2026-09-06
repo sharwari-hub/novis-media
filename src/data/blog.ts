@@ -1,4 +1,4 @@
-﻿export interface BlogPost {
+export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
@@ -38,7 +38,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: 'three-second-hook-formula-roas',
-    title: 'The 3-Second Hook Formula: How We Scaled DTC Brands to 3.4x ROAS',
+    title: 'The 3-Second Hook Formula: Engineering High-Retention Ad Creatives',
     excerpt:
       'The anatomy of a scroll-stopping pattern interrupt. Why the first 90 frames dictate 80% of your paid social profitability.',
     category: 'Creative Strategy',
@@ -49,13 +49,13 @@ export const BLOG_POSTS: BlogPost[] = [
       role: 'Direct Response Strategy',
     },
     content: [
-      'If you analyze over 100,000 ad dollars spent across Meta and TikTok, one metric correlates more closely with blended ROAS than any other: the 3-Second Hook Retention Rate.',
+      'If you analyze ad spend across Meta and TikTok, one metric correlates more closely with paid profitability than almost any other: the 3-Second Hook Retention Rate.',
       'Most underperforming ads fail before the customer even understands what is being sold. Modern users scroll at a velocity of 200 feet of content per day. Your creative does not have 10 seconds to introduce a brand; it has approximately 600 milliseconds to trigger a neurological pattern interrupt.',
       'Here is the exact 3-step hook formula we deploy at Novis Media:',
       'Step 1: Visual Incongruity (0.0s – 1.0s). The opening frame must contain an element that does not belong. Whether it is an unexpected camera angle, an extreme macro zoom, or an unconventional physical action, the brain must be forced to pause its autopilot scrolling behavior.',
-      'Step 2: Unspoken Pain Agitation (1.0s – 2.0s). Do not pitch features. Call out the visceral, frustrating symptom your customer experienced this morning. For our orthopedic pillow client, we did not say "ergonomic memory foam" — we opened with "If you wake up every morning with a stiff neck, your pillow is actively wrecking your posture."',
+      'Step 2: Unspoken Pain Agitation (1.0s – 2.0s). Do not pitch features. Call out the visceral, frustrating symptom your customer experienced this morning. In our ergonomic pillow concept spec, we did not say "ergonomic memory foam" — we opened with "If you wake up every morning with a stiff neck, your pillow is actively wrecking your posture."',
       'Step 3: Immediate Mechanism Tease (2.0s – 3.0s). Show a hint of the solution that looks fundamentally different from everything else they have tried.',
-      'By engineering our videos around this rigorous 3-second pacing framework, we maintain hook rates above 85%, driving down CPMs and establishing a 3.4x average ROAS lift across our brand partners.',
+      'By engineering our videos around this rigorous 3-second pacing framework, we optimize thumb-stop rates, protect paid media spend from early drop-off, and build a scalable testing foundation for our brand partners.',
     ],
   },
   {

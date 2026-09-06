@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { NovisLogo } from './NovisLogo';
 
@@ -40,8 +40,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/#results" className="hover:text-[#F3F1EA] transition-colors">
-                  Performance Metrics
+                <Link href="/#proof" className="hover:text-[#F3F1EA] transition-colors">
+                  Proof & Standards
                 </Link>
               </li>
               <li>
@@ -69,35 +69,18 @@ export function Footer() {
             </h3>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <span className="block text-xs text-[#A5A79B]">Instagram DM:</span>
+                <span className="block text-xs text-[#A5A79B]">Primary Contact Channel:</span>
                 <a
                   href="https://www.instagram.com/novis.creativemedia"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-medium text-[#F3F1EA] hover:text-[#4E9672] transition-colors inline-flex items-center gap-1"
                 >
-                  @novis.creativemedia
+                  <span>Instagram DM (@novis.creativemedia)</span>
                 </a>
               </li>
-              <li>
-                <span className="block text-xs text-[#A5A79B]">X (Twitter):</span>
-                <a
-                  href="https://x.com/NovisMedia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-medium text-[#F3F1EA] hover:text-[#4E9672] transition-colors inline-flex items-center gap-1"
-                >
-                  @NovisMedia
-                </a>
-              </li>
-              <li>
-                <span className="block text-xs text-[#A5A79B]">Direct Email:</span>
-                <a
-                  href="mailto:contact@novismedia.agency"
-                  className="font-medium text-[#F3F1EA] hover:text-[#4E9672] transition-colors"
-                >
-                  contact@novismedia.agency
-                </a>
+              <li className="text-xs text-[#A5A79B] pt-1 leading-relaxed">
+                Founder-monitored inbox for briefs, audits, and partnership discussions. Guaranteed reply within 4 hours.
               </li>
             </ul>
           </div>

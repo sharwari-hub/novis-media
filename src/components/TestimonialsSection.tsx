@@ -1,63 +1,47 @@
-﻿import React from 'react';
-import { TESTIMONIALS } from '@/data/portfolio';
-import { Quote, Sparkles } from 'lucide-react';
+import React from 'react';
+import { ArrowUpRight, Sparkles, ShieldCheck, HeartHandshake } from 'lucide-react';
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 md:py-32 bg-[#0A0C0A] border-b border-[#272E26]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#131711] border border-[#3E7A5C]/40 text-[#4E9672] text-xs font-semibold tracking-wider uppercase">
-            <span className="w-2 h-2 rounded-full bg-[#3E7A5C]" />
-            <span>Partner Proof</span>
+    <section id="proof" className="py-20 md:py-28 bg-[#0A0C0A] border-b border-[#272E26]">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="p-8 sm:p-12 rounded-3xl bg-[#131711] border border-[#3E7A5C]/40 relative overflow-hidden shadow-xl text-center space-y-6">
+          {/* Section Pill in Emerald */}
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0A0C0A] border border-[#3E7A5C]/40 text-[#4E9672] text-xs font-semibold tracking-wider uppercase">
+            <HeartHandshake className="w-3.5 h-3.5 text-[#3E7A5C]" />
+            <span>A Note on Proof & Partnerships</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-[#F3F1EA] tracking-tight">
-            Loved by founders who care about unit economics.
+
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-extrabold text-[#F3F1EA] tracking-tight max-w-2xl mx-auto leading-snug">
+            "We're a new studio building our first client roster — the work above is real, the results are still being written."
           </h2>
-          <p className="text-base sm:text-lg text-[#A5A79B]">
-            Real feedback from CMOs and growth leaders running 7-figure and 8-figure monthly ad spend.
+
+          <p className="text-sm sm:text-base text-[#A5A79B] max-w-xl mx-auto leading-relaxed">
+            We don't believe in fabricated case studies or invented quotes. Every piece of work on this site reflects our real creative caliber, production quality, and storytelling standards. Reach out today and be one of our founding partners.
           </p>
-        </div>
 
-        {/* Testimonials Grid (Emerald Accent Borders, No Carousel) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {TESTIMONIALS.map((item, idx) => (
-            <div
-              key={idx}
-              className="relative p-8 rounded-3xl bg-[#131711] border border-[#3E7A5C]/40 hover:border-[#3E7A5C] transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 shadow-lg"
+          <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="https://www.instagram.com/novis.creativemedia"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#C6A15B] text-[#0A0C0A] font-bold text-sm hover:bg-[#D8B26B] transition-colors shadow-sm"
             >
-              <div className="space-y-6">
-                <div className="flex items-center justify-between">
-                  <span className="px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-md bg-[#3E7A5C]/15 text-[#4E9672] border border-[#3E7A5C]/30">
-                    {item.category}
-                  </span>
-                  <Quote className="w-6 h-6 text-[#3E7A5C]/40 group-hover:text-[#3E7A5C] transition-colors" />
-                </div>
+              <span>Partner With Us on Instagram</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+          </div>
 
-                <p className="text-base text-[#F3F1EA] leading-relaxed font-normal">
-                  "{item.quote}"
-                </p>
-              </div>
-
-              <div className="pt-6 border-t border-[#272E26] mt-8 flex items-center justify-between">
-                <div>
-                  <div className="text-sm font-display font-bold text-[#F3F1EA]">
-                    {item.author}
-                  </div>
-                  <div className="text-xs text-[#A5A79B]">
-                    {item.role}, <span className="text-[#F3F1EA]/80">{item.company}</span>
-                  </div>
-                </div>
-
-                <div className="text-right">
-                  <span className="text-xs font-mono font-bold text-[#3E7A5C] px-2.5 py-1 rounded bg-[#0A0C0A] border border-[#3E7A5C]/30">
-                    {item.metric}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
+          <div className="pt-6 border-t border-[#272E26] flex items-center justify-center gap-6 text-xs text-[#A5A79B]">
+            <span className="flex items-center gap-1.5">
+              <ShieldCheck className="w-4 h-4 text-[#3E7A5C]" />
+              <span>Direct Founder Collaboration</span>
+            </span>
+            <span className="text-[#272E26]">|</span>
+            <span>No Account Layers</span>
+            <span className="text-[#272E26]">|</span>
+            <span>Full Creative Transparency</span>
+          </div>
         </div>
       </div>
     </section>

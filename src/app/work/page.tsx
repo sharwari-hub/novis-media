@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
@@ -12,10 +12,10 @@ import { ArrowUpRight, Sparkles } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Work & Ad Portfolio | Novis Media',
   description:
-    'Browse proven UGC and AI video ad campaigns engineered by Novis Media for DTC brands, e-commerce, and high-growth internet companies.',
+    'Browse UGC and AI video ad concepts engineered by Novis Media for modern DTC brands and companies.',
   openGraph: {
     title: 'Work & Ad Portfolio | Novis Media',
-    description: 'Explore high-converting UGC and AI ad creatives that scaled brand ROAS.',
+    description: 'Explore high-converting UGC and AI ad creatives engineered for modern brands.',
   },
 };
 
@@ -35,7 +35,7 @@ export default function WorkPage() {
               Ad campaigns engineered for algorithmic momentum.
             </h1>
             <p className="text-lg text-[#A5A79B]">
-              Detailed breakdowns of our client campaigns across UGC, generative AI video, web builds, and automated channel management.
+              Detailed breakdowns of our creative concepts, spec work, and production frameworks across UGC, AI video, web builds, and automated channel management.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ export default function WorkPage() {
 
                   <div className="p-3.5 rounded-xl bg-[#0A0C0A] border border-[#272E26]">
                     <div className="text-[11px] font-mono text-[#A5A79B] uppercase mb-1">
-                      Target Metric
+                      Production Note
                     </div>
                     <div className="text-base font-display font-bold text-[#3E7A5C]">
                       {item.metric}
@@ -77,7 +77,7 @@ export default function WorkPage() {
 
                 <div className="pt-6 border-t border-[#272E26] mt-6 flex items-center justify-between">
                   <span className="text-xs text-[#A5A79B]">
-                    Client: <strong className="text-[#F3F1EA]">{item.client}</strong>
+                    Category: <strong className="text-[#F3F1EA]">{item.client}</strong>
                   </span>
 
                   {item.slug && (

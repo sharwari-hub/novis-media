@@ -1,11 +1,10 @@
-﻿'use client';
+'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { Volume2, VolumeX, ArrowUpRight, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Sparkles } from 'lucide-react';
 
 export function Hero() {
-  const [isMuted, setIsMuted] = useState(true);
 
   return (
     <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32 bg-[#0A0C0A] border-b border-[#272E26]">
@@ -75,7 +74,7 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3E7A5C] opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#3E7A5C]" />
               </span>
-              <span>Onboarding 4 brand partners for the upcoming production cohort.</span>
+              <span>Now taking on our founding cohort of brand partners.</span>
             </div>
           </div>
 
@@ -113,7 +112,7 @@ export function Hero() {
                       Viral Retention & Pattern Interrupt
                     </p>
                     <p className="text-[11px] font-mono text-[#3E7A5C] font-bold">
-                      +418% 3-Second View Retention
+                      Sub-1s Hook Architecture
                     </p>
                   </div>
                 </div>

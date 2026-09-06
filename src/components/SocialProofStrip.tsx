@@ -1,10 +1,12 @@
-﻿import React from 'react';
-import { Sparkles, Video, Bot, Share2, Layout, Zap, CheckCircle2 } from 'lucide-react';
+import React from 'react';
+import { Sparkles, Video, Bot, Share2, Layout, Zap, CheckCircle2, Target, Search } from 'lucide-react';
 
 export function SocialProofStrip() {
   const serviceItems = [
     { title: 'Performance UGC Ads', icon: Video, tag: 'High ROAS' },
     { title: 'AI-Generated Commercials', icon: Sparkles, tag: 'Hollywood-Grade' },
+    { title: 'Facebook & Instagram Ads', icon: Target, tag: 'Paid Acquisition' },
+    { title: 'Google Ads (Search & PMax)', icon: Search, tag: 'Intent Capture' },
     { title: 'AI Avatars & Auto-Edited Reels', icon: Bot, tag: 'Channel Autopilot' },
     { title: 'Social Media Management', icon: Share2, tag: 'Organic Growth' },
     { title: 'High-Converting Web & Funnel Design', icon: Layout, tag: 'Conversion CRO' },

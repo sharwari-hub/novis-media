@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { Navbar } from '@/components/Navbar';
@@ -81,7 +81,7 @@ export default function ContactPage() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#3E7A5C]" />
-                  <span>Onboarding strictly capped at 4 brands/month</span>
+                  <span>Direct founder execution on all concepts</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-[#3E7A5C]" />
@@ -127,7 +127,7 @@ export default function ContactPage() {
                           required
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                          placeholder="Elena Vance"
+                          placeholder="Alex Morgan"
                           className="w-full px-4 py-3 rounded-xl bg-[#0A0C0A] border border-[#272E26] text-sm text-[#F3F1EA] placeholder-[#A5A79B]/50 focus:outline-none focus:border-[#3E7A5C]"
                         />
                       </div>
@@ -141,7 +141,7 @@ export default function ContactPage() {
                           required
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          placeholder="elena@yourbrand.com"
+                          placeholder="alex@yourbrand.com"
                           className="w-full px-4 py-3 rounded-xl bg-[#0A0C0A] border border-[#272E26] text-sm text-[#F3F1EA] placeholder-[#A5A79B]/50 focus:outline-none focus:border-[#3E7A5C]"
                         />
                       </div>
@@ -189,6 +189,8 @@ export default function ContactPage() {
                         >
                           <option value="Scale UGC Video Ads">Scale UGC Video Ads</option>
                           <option value="Deploy AI Synthetic Ads">Deploy AI Synthetic Ads</option>
+                          <option value="Facebook & Instagram Ads">Facebook &amp; Instagram Ads</option>
+                          <option value="Google Ads">Google Ads</option>
                           <option value="Social Media Content Growth">Social Media Content Growth</option>
                           <option value="High-Converting Web Funnel">High-Converting Web Funnel</option>
                         </select>

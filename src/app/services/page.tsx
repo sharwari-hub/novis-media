@@ -1,18 +1,18 @@
-﻿import React from 'react';
+import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { KyaSceneCluster } from '@/components/KyaSceneCluster';
-import { ArrowUpRight, CheckCircle2, Video, Sparkles, Share2, Layout, Bot } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, Video, Sparkles, Share2, Layout, Bot, Target, Search } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Performance Services | Novis Media',
   description:
-    'Comprehensive creative performance services: UGC Video Ads, AI-Generated Commercials, AI Avatars & Auto-Edited Reels, Social Media Management, and High-Converting Landing Page Design.',
+    'Comprehensive creative performance services: UGC Video Ads, AI-Generated Commercials, Facebook & Instagram Ads, Google Ads, AI Avatars, Social Media Management, and High-Converting Landing Page Design.',
   openGraph: {
     title: 'Services & Capabilities | Novis Media',
-    description: 'Explore our 5 core creative engines engineered for DTC brands and modern companies.',
+    description: 'Explore our 7 core creative and paid growth engines engineered for DTC brands and modern companies.',
   },
 };
 
@@ -45,6 +45,34 @@ export default function ServicesPage() {
         'Zero actor or studio booking delays',
       ],
       idealFor: 'Luxury Goods, Fragrance, Tech Accessories, Disruptive DTC',
+    },
+    {
+      icon: Target,
+      title: 'Facebook & Instagram Ads',
+      tag: 'Paid Acquisition',
+      description:
+        'Full-funnel Meta advertising management pairing rigorous creative testing sprints with algorithmic budget scaling (Advantage+ and CBO) to drive sustainable, predictable ROAS.',
+      features: [
+        'Full-funnel campaign architecture (cold prospecting, retargeting & retention)',
+        'Iterative creative testing sandboxes isolating hook, body, and CTA performance',
+        'Conversion API (CAPI), pixel health, and first-party attribution tracking',
+        'Weekly budget scaling and cost-cap bidding management',
+      ],
+      idealFor: 'E-Commerce, DTC Brands, High-Growth Apps, Lead-Gen Businesses',
+    },
+    {
+      icon: Search,
+      title: 'Google Ads & YouTube Advertising',
+      tag: 'Intent Capture',
+      description:
+        'High-intent search capture, Performance Max (PMax) asset group optimization, and YouTube video action campaigns that convert in-market buyers at the lowest possible CAC.',
+      features: [
+        'Performance Max asset group optimization paired with custom video creatives',
+        'High-intent Search query harvesting and aggressive negative keyword management',
+        'Google Merchant Center feed optimization and custom product labels',
+        'YouTube Shorts & in-feed video action ad campaigns',
+      ],
+      idealFor: 'DTC Stores, Service Businesses, B2B Brands & High-Intent Products',
     },
     {
       icon: Bot,
@@ -102,7 +130,7 @@ export default function ServicesPage() {
               <span>Agency Capabilities</span>
             </div>
             <h1 className="text-4xl sm:text-5xl font-display font-extrabold text-[#F3F1EA] tracking-tight">
-              Five creative engines. One obsessive outcome: ROAS.
+              Seven creative & media engines. One obsessive outcome: Growth.
             </h1>
             <p className="text-lg text-[#A5A79B]">
               We eliminate the friction between media buying and creative production. Here is exactly how we scale modern brands.

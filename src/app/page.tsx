@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
 import { SocialProofStrip } from '@/components/SocialProofStrip';
@@ -50,10 +50,10 @@ const jsonLdVideo = {
   "@context": "https://schema.org",
   "@type": "VideoObject",
   "name": "Novis Media — High-Converting UGC & AI Ad Creatives",
-  "description": "Demonstration of scroll-stopping video ads created for DTC brands by Novis Media agency.",
-  "thumbnailUrl": "https://novismedia.agency/thumbnails/yt-dr-trust.jpg",
+  "description": "Showcase of scroll-stopping video ads and creative concepts engineered by Novis Media.",
+  "thumbnailUrl": "https://novismedia.agency/novis-logo.png",
   "uploadDate": "2026-01-01T08:00:00+08:00",
-  "contentUrl": "https://novismedia.agency/videos/hero-hook.mp4"
+  "embedUrl": "https://www.youtube.com/embed/F_fP49L0XvA"
 };
 
 export default function HomePage() {

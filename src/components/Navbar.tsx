@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -29,10 +29,10 @@ export function Navbar() {
             Process
           </Link>
           <Link
-            href="/#results"
+            href="/#proof"
             className="hover:text-[#F3F1EA] transition-colors focus:outline-none focus-visible:text-[#3E7A5C]"
           >
-            Results
+            Proof
           </Link>
           <Link
             href="/services"
@@ -96,11 +96,11 @@ export function Navbar() {
               Our Process
             </Link>
             <Link
-              href="/#results"
+              href="/#proof"
               onClick={() => setMobileMenuOpen(false)}
               className="hover:text-[#F3F1EA] py-1 transition-colors"
             >
-              Case Results
+              Proof & Standards
             </Link>
             <Link
               href="/services"

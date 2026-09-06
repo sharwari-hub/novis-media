@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
@@ -187,7 +187,7 @@ export function AutoPlayVideoCard({
       <div className="p-5 flex flex-col justify-between flex-grow space-y-3">
         <div>
           <div className="text-[11px] font-medium text-[#A5A79B] uppercase tracking-wider mb-1">
-            Client: {item.client}
+            Category: {item.client}
           </div>
           <h3 className="text-base font-display font-bold text-[#F3F1EA] leading-snug group-hover:text-[#4E9672] transition-colors">
             {item.title}

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -138,7 +138,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 Want Novis Media to engineer your next winning ad batch?
               </h2>
               <p className="text-sm text-[#A5A79B] max-w-xl">
-                We synthesize high-converting UGC hooks with custom AI video generation to drive scalable ROAS for DTC brands. Limited to 4 new brand partners per monthly cohort.
+                We synthesize high-converting UGC hooks with custom AI video generation to build scalable creative engines for modern brands. Now onboarding our founding partner cohort.
               </p>
             </div>
 

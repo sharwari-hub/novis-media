@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { ArrowUpRight, CheckCircle2, HardHat, PlusCircle, ExternalLink } from 'lucide-react';
@@ -95,7 +95,7 @@ export function ConstructionCaseStudy() {
 
             <div className="pt-6 border-t border-[#272E26] mt-6 flex items-center justify-between">
               <span className="text-xs font-mono font-bold text-[#3E7A5C]">
-                3.2x Lift in Inbound Qualified RFQs
+                Custom Web Platform & RFQ Architecture
               </span>
               <a
                 href="https://www.instagram.com/novis.creativemedia"

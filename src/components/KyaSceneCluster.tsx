@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { Sparkles, ArrowUpRight, CheckCircle2, Zap } from 'lucide-react';
@@ -9,21 +9,21 @@ export function KyaSceneCluster() {
       id: 'Xe2K1i3mSjM',
       title: 'Diet & Nutrition Pattern Interrupt',
       category: 'AI Avatar Short',
-      metrics: '418% 3-Sec Retention',
+      metrics: 'Pattern Interrupt Hook',
       hook: 'High-contrast visual hook stopping scrollers in the first 0.5 seconds.',
     },
     {
       id: 'UrFmNxvxCi4',
       title: 'Health & Science Urgency Hook',
       category: 'AI Avatar Short',
-      metrics: '2.1M Organic Views',
+      metrics: 'Curiosity Gap Script',
       hook: 'Curiosity gap script engineered for algorithmic recommendation.',
     },
     {
       id: '6ZkDaIPB9Ho',
       title: 'Direct-Address Pattern Break',
       category: 'AI Avatar Short',
-      metrics: '91% Hook Hold Rate',
+      metrics: 'Direct-Address Pacing',
       hook: 'Aggressive thumb-stop hook breaking feed trance instantly.',
     },
   ];

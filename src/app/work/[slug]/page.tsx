@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -26,10 +26,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${item.title} | Novis Media Case Study`,
-    description: `How Novis Media engineered high-converting video creative for ${item.client} generating ${item.metric}.`,
+    title: `${item.title} | Novis Media Creative Breakdown`,
+    description: `Production breakdown and creative strategy for ${item.title}: ${item.metric}.`,
     openGraph: {
-      title: `${item.title} — Case Study`,
+      title: `${item.title} — Creative Breakdown`,
       description: item.hook,
       images: item.poster ? [{ url: item.poster }] : undefined,
     },
@@ -73,7 +73,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 {item.aspectRatio}
               </span>
               <span className="text-xs text-[#A5A79B]">
-                Partner: <strong className="text-[#F3F1EA]">{item.client}</strong>
+                Format / Spec: <strong className="text-[#F3F1EA]">{item.client}</strong>
               </span>
             </div>
 
@@ -82,7 +82,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
             </h1>
 
             <p className="text-lg text-[#A5A79B] max-w-3xl">
-              A comprehensive breakdown of the creative hypotheses, hook construction, and scaling outcomes delivered by Novis Media.
+              A comprehensive breakdown of the creative hypotheses, hook construction, and production techniques engineered by Novis Media.
             </p>
           </div>
 
@@ -120,9 +120,9 @@ export default async function CaseStudyPage({ params }: PageProps) {
               {/* Outcome Highlight Box */}
               <div className="p-6 rounded-2xl bg-[#131711] border border-[#272E26] border-l-4 border-l-[#3E7A5C]">
                 <div className="text-xs font-mono uppercase tracking-wider text-[#A5A79B] mb-1">
-                  Primary Performance Milestone
+                  Creative & Production Focus
                 </div>
-                <div className="text-2xl sm:text-3xl font-display font-extrabold text-[#3E7A5C]">
+                <div className="text-xl sm:text-2xl font-display font-bold text-[#3E7A5C]">
                   {item.metric}
                 </div>
               </div>

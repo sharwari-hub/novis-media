@@ -1,33 +1,10 @@
-﻿'use client';
+'use client';
 
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { PROCESS_STEPS } from '@/data/portfolio';
-import { Volume2, VolumeX, Play, Pause, CheckCircle2, Film } from 'lucide-react';
+import { CheckCircle2, Sparkles, PlusCircle, ArrowUpRight } from 'lucide-react';
 
 export function ProcessSection() {
-  const btsVideoRef = useRef<HTMLVideoElement>(null);
-  const [isBtsMuted, setIsBtsMuted] = useState(true);
-  const [isBtsPlaying, setIsBtsPlaying] = useState(false);
-
-  const toggleBtsPlay = () => {
-    if (btsVideoRef.current) {
-      if (btsVideoRef.current.paused) {
-        btsVideoRef.current.play();
-        setIsBtsPlaying(true);
-      } else {
-        btsVideoRef.current.pause();
-        setIsBtsPlaying(false);
-      }
-    }
-  };
-
-  const toggleBtsSound = () => {
-    if (btsVideoRef.current) {
-      btsVideoRef.current.muted = !btsVideoRef.current.muted;
-      setIsBtsMuted(btsVideoRef.current.muted);
-    }
-  };
-
   return (
     <section id="process" className="py-20 md:py-32 bg-[#0A0C0A] border-b border-[#272E26]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,14 +15,14 @@ export function ProcessSection() {
             <span>The Creative Engine</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-extrabold text-[#F3F1EA] tracking-tight">
-            How we turn raw briefs into cash-printing creative in 14 days.
+            How we turn raw briefs into live creative in 14 days.
           </h2>
           <p className="text-base sm:text-lg text-[#A5A79B]">
-            No bloated agency bureaucracy. We execute a rapid 3-stage sprint engineered to isolate conversion winners before ad fatigue sets in.
+            No bloated agency bureaucracy. We execute a focused 3-stage sprint engineered to isolate strong hooks and build testing batches.
           </p>
         </div>
 
-        {/* 3 Numbered Steps with 53s BTS Video inside Step 02 */}
+        {/* 3 Numbered Steps */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {PROCESS_STEPS.map((step, idx) => {
             const isCreateStep = step.number === '02';
@@ -55,7 +32,7 @@ export function ProcessSection() {
                 key={idx}
                 className={`flex flex-col justify-between rounded-3xl p-7 md:p-8 bg-[#131711] border transition-all duration-300 ${
                   isCreateStep
-                    ? 'border-[#3E7A5C] lg:col-span-1 ring-1 ring-[#3E7A5C]/30'
+                    ? 'border-[#3E7A5C] ring-1 ring-[#3E7A5C]/30'
                     : 'border-[#272E26] hover:border-[#3E7A5C]/40'
                 }`}
               >
@@ -67,8 +44,8 @@ export function ProcessSection() {
                     </span>
                     {isCreateStep && (
                       <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-[#3E7A5C]/20 text-[#4E9672] border border-[#3E7A5C]/40">
-                        <Film className="w-3.5 h-3.5" />
-                        <span>BTS in Action</span>
+                        <Sparkles className="w-3.5 h-3.5 text-[#3E7A5C]" />
+                        <span>Core Synthesis</span>
                       </span>
                     )}
                   </div>
@@ -81,53 +58,45 @@ export function ProcessSection() {
                     {step.description}
                   </p>
 
-                  {/* Step 02 Specific: The 53s BTS Clip Embedded */}
-                  {isCreateStep && step.videoEvidence && (
-                    <div className="pt-2">
-                      <div className="relative rounded-2xl overflow-hidden bg-[#0A0C0A] border border-[#272E26] aspect-[9/16] max-h-[380px] mx-auto group">
-                        <video
-                          ref={btsVideoRef}
-                          src={step.videoEvidence}
-                          playsInline
-                          loop
-                          muted={isBtsMuted}
-                          preload="metadata"
-                          className="w-full h-full object-cover"
-                        />
-
-                        {/* Video Controls Overlay */}
-                        <div className="absolute inset-0 bg-[#0A0C0A]/40 flex items-center justify-center transition-opacity group-hover:bg-[#0A0C0A]/20">
-                          <button
-                            onClick={toggleBtsPlay}
-                            aria-label={isBtsPlaying ? 'Pause BTS video' : 'Play BTS video'}
-                            className="p-4 rounded-full bg-[#0A0C0A]/85 border border-[#272E26] text-[#F3F1EA] hover:border-[#3E7A5C] hover:scale-105 transition-all shadow-xl"
-                          >
-                            {isBtsPlaying ? (
-                              <Pause className="w-6 h-6" />
-                            ) : (
-                              <Play className="w-6 h-6 fill-current ml-0.5" />
-                            )}
-                          </button>
+                  {/* Step 02 Specific: Converted from broken bts-process.mp4 to Available Slot Placeholder Card */}
+                  {isCreateStep && (
+                    <div
+                      onClick={() => {
+                        const el = document.getElementById('contact');
+                        if (el) el.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="group relative flex flex-col justify-between rounded-2xl bg-[#0A0C0A]/60 border border-dashed border-[#272E26] hover:border-[#3E7A5C] p-5 cursor-pointer transition-all duration-300 my-2"
+                    >
+                      <div className="space-y-3">
+                        <div className="flex items-center justify-between">
+                          <span className="px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider rounded bg-[#272E26]/60 text-[#A5A79B] group-hover:border-[#3E7A5C]/40 border border-transparent transition-colors">
+                            BTS Process — Available Slot
+                          </span>
+                          <span className="text-[11px] font-mono text-[#A5A79B] group-hover:text-[#4E9672] transition-colors">
+                            Available Slot
+                          </span>
                         </div>
 
-                        {/* Floating sound toggle and caption */}
-                        <div className="absolute bottom-3 inset-x-3 flex items-center justify-between p-2 rounded-xl bg-[#0A0C0A]/90 backdrop-blur-md border border-[#272E26]">
-                          <span className="text-[10px] font-mono text-[#4E9672] font-semibold truncate max-w-[170px]">
-                            53s BTS Cut: Creative Edit
-                          </span>
-                          <button
-                            onClick={toggleBtsSound}
-                            aria-label={isBtsMuted ? 'Unmute video' : 'Mute video'}
-                            className="p-1 rounded-md text-[#A5A79B] hover:text-[#F3F1EA] transition-colors"
-                          >
-                            {isBtsMuted ? <VolumeX className="w-4 h-4 text-[#C6A15B]" /> : <Volume2 className="w-4 h-4 text-[#3E7A5C]" />}
-                          </button>
+                        <div className="py-4 text-center flex flex-col items-center justify-center space-y-2.5">
+                          <div className="w-11 h-11 rounded-full bg-[#181E16] border border-[#272E26] group-hover:border-[#3E7A5C] group-hover:scale-110 flex items-center justify-center transition-all">
+                            <PlusCircle className="w-5 h-5 text-[#A5A79B] group-hover:text-[#3E7A5C] transition-colors" />
+                          </div>
+                          <h4 className="text-sm font-display font-bold text-[#F3F1EA] group-hover:text-[#4E9672] transition-colors">
+                            Behind-the-Scenes Production Reel
+                          </h4>
+                          <p className="text-xs text-[#A5A79B] max-w-[240px]">
+                            Live studio editing timeline and AI motion synthesis walkthrough reserved for upcoming partner sprint.
+                          </p>
                         </div>
                       </div>
 
-                      <p className="text-[11px] text-[#A5A79B] mt-2 text-center italic">
-                        {step.videoCaption}
-                      </p>
+                      <div className="pt-4 border-t border-[#272E26]/60 flex items-center justify-between text-xs text-[#A5A79B]">
+                        <span className="font-mono text-[11px] text-[#3E7A5C] font-semibold">Available Studio Slot</span>
+                        <span className="inline-flex items-center gap-1 group-hover:text-[#F3F1EA] transition-colors font-medium">
+                          <span>Reserve Slot</span>
+                          <ArrowUpRight className="w-3.5 h-3.5" />
+                        </span>
+                      </div>
                     </div>
                   )}
 
@@ -145,8 +114,9 @@ export function ProcessSection() {
                   </div>
                 </div>
 
-                <div className="pt-6 border-t border-[#272E26] mt-6 text-[11px] text-[#A5A79B]">
-                  Stage {step.number} Duration: <strong className="text-[#F3F1EA]">{idx === 0 ? 'Days 1-3' : idx === 1 ? 'Days 4-10' : 'Days 11-14+'}</strong>
+                <div className="pt-6 border-t border-[#272E26] mt-8 flex items-center justify-between text-xs text-[#A5A79B]">
+                  <span className="font-mono text-[#3E7A5C] font-semibold">Stage {step.number} of 03</span>
+                  <span>14-Day Delivery Window</span>
                 </div>
               </div>
             );

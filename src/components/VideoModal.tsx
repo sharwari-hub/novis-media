@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
 import { X, Volume2, VolumeX, ExternalLink, Sparkles } from 'lucide-react';
@@ -129,7 +129,7 @@ export function VideoModal({ item, isOpen, onClose }: VideoModalProps) {
                 {item.aspectRatio}
               </span>
               <span className="text-xs text-[#A5A79B]">
-                Partner: <strong className="text-[#F3F1EA]">{item.client}</strong>
+                Category: <strong className="text-[#F3F1EA]">{item.client}</strong>
               </span>
             </div>
 
@@ -140,9 +140,9 @@ export function VideoModal({ item, isOpen, onClose }: VideoModalProps) {
             {/* Metric Box */}
             <div className="p-4 rounded-xl bg-[#0A0C0A] border border-[#272E26] border-l-2 border-l-[#3E7A5C]">
               <div className="text-xs font-semibold text-[#A5A79B] uppercase tracking-wider mb-1">
-                Verified Outcome
+                Production Note
               </div>
-              <div className="text-lg font-display font-bold text-[#3E7A5C]">
+              <div className="text-base font-display font-bold text-[#3E7A5C]">
                 {item.metric}
               </div>
             </div>

@@ -69,7 +69,6 @@ export const metadata: Metadata = {
     title: "Novis Media | UGC & AI Ad Creative Agency",
     description:
       "Small spark, big reach. Scroll-stopping UGC and AI video ads engineered for maximum ROAS.",
-    creator: "@NovisMedia",
     images: ["/novis-logo.png"],
   },
   icons: {
@@ -104,7 +103,6 @@ const jsonLdOrganization = {
   slogan: "Small spark, big reach.",
   sameAs: [
     "https://www.instagram.com/novis.creativemedia",
-    "https://x.com/NovisMedia",
   ],
   contactPoint: {
     "@type": "ContactPoint",

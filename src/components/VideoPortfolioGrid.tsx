@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { ALL_PORTFOLIO_ITEMS, VideoItem } from '@/data/portfolio';
@@ -39,7 +39,7 @@ export function VideoPortfolioGrid() {
               Crafted to stop the thumb. Engineered to convert.
             </h2>
             <p className="text-base sm:text-lg text-[#A5A79B]">
-              Scroll through active client campaigns. Videos automatically play as they enter your feed — tap any card to unmute and inspect full performance analytics.
+              Explore our creative ad concepts and video production frameworks. Videos play directly in-feed — tap any card to watch full screen and inspect the creative hook architecture.
             </p>
           </div>
 
@@ -94,10 +94,10 @@ export function VideoPortfolioGrid() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider rounded bg-[#272E26]/60 text-[#A5A79B] group-hover:border-[#3E7A5C]/40 border border-transparent transition-colors">
-                        {item.category}
+                        {item.category} — Available Slot
                       </span>
-                      <span className="text-[11px] font-mono text-[#A5A79B] group-hover:text-[#4E9672] transition-colors">
-                        Available Slot
+                      <span className="text-[10px] font-mono text-[#4E9672] group-hover:text-[#F3F1EA] transition-colors">
+                        {item.aspectRatio}
                       </span>
                     </div>
 
